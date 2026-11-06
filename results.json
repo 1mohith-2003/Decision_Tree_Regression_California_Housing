@@ -1,0 +1,133 @@
+{
+  "dataset": {
+    "rows": 20640,
+    "columns": [
+      "MedInc",
+      "HouseAge",
+      "AveRooms",
+      "AveBedrms",
+      "Population",
+      "AveOccup",
+      "Latitude",
+      "Longitude",
+      "target"
+    ],
+    "missing_values": {
+      "MedInc": 0,
+      "HouseAge": 0,
+      "AveRooms": 0,
+      "AveBedrms": 0,
+      "Population": 0,
+      "AveOccup": 0,
+      "Latitude": 0,
+      "Longitude": 0,
+      "target": 0
+    },
+    "dtypes": {
+      "MedInc": "float64",
+      "HouseAge": "int64",
+      "AveRooms": "float64",
+      "AveBedrms": "float64",
+      "Population": "int64",
+      "AveOccup": "float64",
+      "Latitude": "float64",
+      "Longitude": "float64",
+      "target": "float64"
+    }
+  },
+  "baseline": {
+    "Training R2": 1.0,
+    "Testing R2": 0.622075845135081,
+    "MAE": 0.45467918846899225,
+    "RMSE": 0.7037294974840077
+  },
+  "depth_comparison": [
+    {
+      "Model": "max_depth=3",
+      "max_depth": "3",
+      "Training R2": 0.5378979887726012,
+      "Testing R2": 0.5097629887358219,
+      "MAE": 0.5978280732432436,
+      "RMSE": 0.8015054466605727
+    },
+    {
+      "Model": "max_depth=7",
+      "max_depth": "7",
+      "Training R2": 0.7166975587892221,
+      "Testing R2": 0.6515700686011479,
+      "MAE": 0.47316139734802376,
+      "RMSE": 0.6757112625914389
+    },
+    {
+      "Model": "max_depth=None",
+      "max_depth": "None",
+      "Training R2": 1.0,
+      "Testing R2": 0.622075845135081,
+      "MAE": 0.45467918846899225,
+      "RMSE": 0.7037294974840077
+    }
+  ],
+  "criterion_comparison": [
+    {
+      "Criterion": "squared_error",
+      "Training R2": 0.7166975587892221,
+      "Testing R2": 0.6515700686011479,
+      "MAE": 0.47316139734802376,
+      "RMSE": 0.6757112625914389
+    },
+    {
+      "Criterion": "absolute_error",
+      "Training R2": 0.6849211576985983,
+      "Testing R2": 0.6273840398447783,
+      "MAE": 0.4718865019379844,
+      "RMSE": 0.6987698473912964
+    }
+  ],
+  "min_samples_leaf_comparison": [
+    {
+      "min_samples_leaf": 1,
+      "Training R2": 1.0,
+      "Testing R2": 0.622075845135081,
+      "MAE": 0.45467918846899225,
+      "RMSE": 0.7037294974840077
+    },
+    {
+      "min_samples_leaf": 5,
+      "Training R2": 0.9108279510582625,
+      "Testing R2": 0.695329837596486,
+      "MAE": 0.41603682907092104,
+      "RMSE": 0.6318564047437343
+    },
+    {
+      "min_samples_leaf": 10,
+      "Training R2": 0.8554442231743611,
+      "Testing R2": 0.7223593982604586,
+      "MAE": 0.40481361504421026,
+      "RMSE": 0.6031772021916121
+    },
+    {
+      "min_samples_leaf": 20,
+      "Training R2": 0.8088861432889415,
+      "Testing R2": 0.7273081251592183,
+      "MAE": 0.4041270341593175,
+      "RMSE": 0.59777745113437
+    },
+    {
+      "min_samples_leaf": 50,
+      "Training R2": 0.7559097853572545,
+      "Testing R2": 0.7030894927955115,
+      "MAE": 0.4269503151366051,
+      "RMSE": 0.6237581216904683
+    }
+  ],
+  "best_configuration": {
+    "criterion": "squared_error",
+    "random_state": 42,
+    "max_depth": null,
+    "min_samples_leaf": 20.0,
+    "Training R2": 0.8088861432889415,
+    "Testing R2": 0.7273081251592183,
+    "MAE": 0.4041270341593175,
+    "RMSE": 0.59777745113437
+  }
+}

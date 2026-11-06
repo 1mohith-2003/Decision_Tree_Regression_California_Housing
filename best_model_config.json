@@ -1,0 +1,10 @@
+{
+  "criterion": "squared_error",
+  "random_state": 42,
+  "max_depth": null,
+  "min_samples_leaf": 20.0,
+  "Training R2": 0.8088861432889415,
+  "Testing R2": 0.7273081251592183,
+  "MAE": 0.4041270341593175,
+  "RMSE": 0.59777745113437
+}
